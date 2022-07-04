@@ -1,0 +1,50 @@
+@use '../abstracts/' as *;
+
+.grid-container-2 {
+	padding: 0 4rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8rem;
+	@include respond($tab-land) {
+		grid-template-columns: 1fr;
+		padding: 0 25rem;
+	}
+	@include respond($tab-port) {
+		padding: 0 15rem;
+	}
+}
+
+.grid-container-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 4rem;
+
+	@include respond($tab-land) {
+		grid-template-columns: 1fr;
+		padding: 0 15rem;
+	}
+	@include respond($tab-land) {
+		grid-template-columns: 1fr;
+		padding: 0 10rem;
+	}
+
+	@include respond($phone) {
+		padding: 0 5rem;
+	}
+}
+
+.grid-container-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4rem;
+	@include respond($tab-land) {
+		grid-template-columns: 1fr;
+		padding: 0 20rem;
+	}
+	@include respond($tab-port) {
+		padding: 0 10rem;
+	}
+	@include respond($phone) {
+		padding: 0 8rem;
+	}
+}

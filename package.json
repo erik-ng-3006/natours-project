@@ -1,0 +1,19 @@
+{
+	"name": "natours",
+	"version": "1.0.0",
+	"description": "Lading page for natours",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "parcel index.html",
+		"dev": "parcel index.html",
+		"build": "parcel build index.html"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.6.0",
+		"parcel": "^2.0.0",
+		"sass": "^1.52.3"
+	}
+}
